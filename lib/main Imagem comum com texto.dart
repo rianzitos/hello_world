@@ -13,22 +13,15 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        body: Container(
-          decoration: const BoxDecoration(
-            image: DecorationImage(
-              image: AssetImage("assets/images/6386374.jpg"),
-              fit: BoxFit.contain,
-            ),
-          ),
-          child: const Center(
-            child: Text(
-              "SENAI",
-              style: TextStyle(
-                fontSize: 30,
-                color: Color.fromRGBO(255, 1, 1, 1),
-                fontWeight: FontWeight.bold,
-              ),
-            ),
+        appBar: AppBar(title: const Text("Texto e Imagem")),
+        body: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              const Text("Bem-vindo ", style: TextStyle(fontSize: 24)),
+              const SizedBox(height: 20),
+              Image.asset('assets/images/6386374.jpg', width: 200),
+            ],
           ),
         ),
       ),
