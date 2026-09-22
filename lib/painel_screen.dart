@@ -1,7 +1,7 @@
 import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
 
-import 'main.dart'; // reaproveita a paleta AppColors já usada no login
+import 'bancointerno/main.dart'; // reaproveita a paleta AppColors já usada no login
 
 // =======================================================
 // Cores extras usadas só nesta tela (cards claros, gráficos, positivo)
